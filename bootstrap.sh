@@ -39,7 +39,7 @@ fi
 pip install heat-cfntools os-collect-config os-refresh-config os-apply-config dib-utils
 
 cd /root
-wget $REPO/archive/$BRANCH.tar.gz
+curl -LO $REPO/archive/$BRANCH.tar.gz
 tar xzf $BRANCH.tar.gz
 cd heat-config-$BRANCH/config
 for DIR in *; do
